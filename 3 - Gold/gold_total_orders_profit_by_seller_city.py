@@ -42,12 +42,7 @@ df_sellers = spark.read.table("olist_silver.sellers")
 
 # COMMAND ----------
 
-display(df_sellers)
-
-# COMMAND ----------
-
 df = df_order_items.join(df_sellers, on=['seller_id'], how="inner")
-display(df)
 
 # COMMAND ----------
 
