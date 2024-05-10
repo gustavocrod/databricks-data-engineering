@@ -90,7 +90,7 @@ dbutils.notebook.exit("OK")
 
 # MAGIC %sql
 # MAGIC
-# MAGIC select * from olist_gold.orders
+# MAGIC select * from olist_gold.total_orders_profit_by_seller_city
 
 # COMMAND ----------
 

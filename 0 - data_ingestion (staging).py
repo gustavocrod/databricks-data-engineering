@@ -42,11 +42,7 @@
 # COMMAND ----------
 
 import opendatasets as od
-od.download("https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce", "dataset/")
-
-# COMMAND ----------
-
-# MAGIC %ls dbfs:/FileStore/dataset/brazilian-ecommerce/
+od.download("https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce", data_dir="/FileStore/datasets/") # foi para file:/
 
 # COMMAND ----------
 
@@ -67,7 +63,7 @@ od.download("https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce", "data
 df = (
     spark.read.format("csv")
     .options(header="true", inferSchema=True)
-    .load("dataset/brazilian-ecommerce/olist_customers_dataset.csv")
+    .load("file:/FileStore/datasets/brazilian-ecommerce/olist_customers_dataset.csv")
 )
 
 # COMMAND ----------
@@ -127,7 +123,7 @@ for file_name in files:
     df = (
         spark.read.format("csv")
         .options(header="true", inferSchema=True, multiLine=True, quote='"', escape='"')
-        .load(f"dbfs:/FileStore/dataset/brazilian-ecommerce/{file_name}.csv")
+        .load(f"file:/FileStore/datasets/brazilian-ecommerce/{file_name}.csv")
     )
 
     save_dataframe(

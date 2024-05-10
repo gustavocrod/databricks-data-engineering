@@ -22,7 +22,7 @@ Este é um conjunto de dados públicos de comércio eletrônico brasileiro das c
 Estes são dados comerciais reais, foram anonimizados, e as referências às empresas e parceiros no texto de revisão foram substituídas pelos nomes das grandes casas de Game of Thrones.
 
 ## 1 - Ingestão de dados (staging)
-O arquivo .ipynb responsável pode ser visto [aqui](https://dbc-df9d574c-31e4.cloud.databricks.com/?o=2804151959601052#notebook/422770193078297/command/422770193078311)
+O arquivo .ipynb responsável pela ingestão pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/0%20-%20data_ingestion%20(staging).py)
 
 O dataset escolhido foi o [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerces)
 
@@ -39,8 +39,6 @@ ____
 **Camada inicial, dados _as is_**
 
 
-
-
 Muito importante que dados nessa camada reflitam o banco ou fonte dos dados
 
 aqui podemos ter duplicidade em versões de dados que devem ser tratados nas camadas posteriores.
@@ -49,7 +47,7 @@ Costumo chamar essa camada de "lake"
 ### Persistência dos dados
 
 Nessa layer, armazenamos os dados em delta e criamos a delta table no database Bronze.
-O arquivo pode ser visto [aqui](https://dbc-df9d574c-31e4.cloud.databricks.com/?o=2804151959601052#notebook/422770193078081/command/422770193078087)
+O arquivo pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/1%20-%20Bronze/bronze_olist.py)
 
 ____
 
@@ -68,14 +66,12 @@ p.s. embora tenha visto várias implementações distintas em projetos que atuei
 
 Nessa layer aplicamos "enriquecimento" de dados. Fizemos isso agregando e manipulando campos como "data de entrega" e "data do envio" para calculado o "tempo de entrega".
 
-Esses dados são utilizados para analytics. Os arquivos dessa camada podem ser vistos [aqui](https://dbc-df9d574c-31e4.cloud.databricks.com/browse/folders/422770193078138?o=2804151959601052)
-</silver_layer>
+Esses dados são utilizados para analytics. Os arquivos dessa camada podem ser vistos [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/tree/main/2%20-%20Silver)
+
 ----
 ## 🥇 Gold
-<gold_layer>
-<summary>
+
 **camada para aplicação de regras de negócio**
-</summary>
 
 e.g.,
  - junção/união de tabelas
@@ -86,7 +82,8 @@ e.g.,
   Dessa forma várias agregações podem ser feitas ao conectar essa tabela diretamente em ferramentes de visualização como o Power BI e Metabase. Sendo ela como uma espécie de data mart
   * **2 - agregação analítica**. _i.e._, sumarização de dados.
   Dessa forma podemos adicionar em ferramentas mais simples ou também é util para algum analista que não detém conhecimento em SQL.
-</gold_layer>
+Os arquivos dessa camada podem ser vistos [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/tree/main/3%20-%20Gold)
+
 ___
 
 ### 📜 Caso de estudo RFV
@@ -101,5 +98,8 @@ Essa abordagem analisa três aspectos principais do comportamento do cliente:
 - **Recency (Recência):** Refere-se à última vez que um cliente fez uma compra. Geralmente, clientes que fizeram compras recentes são mais propensos a fazer compras futuras do que aqueles que não compraram há muito tempo.
 - **Frequency (Frequência):** Refere-se à frequência com que um cliente faz compras durante um determinado período de tempo. Clientes que compram com frequência podem ser considerados mais leais e valiosos para a empresa.
 - **Value (Valor):** Refere-se ao valor monetário total das compras feitas por um cliente durante um determinado período de tempo. Clientes que gastam mais têm um valor de vida do cliente mais alto e podem ser alvos de estratégias de marketing mais agressivas.
+
+## Dashboard
+![dash final](extra/dash.PNG)
 
 Ao analisar esses três aspectos juntos, as empresas podem segmentar seus clientes em diferentes grupos com base em seu comportamento de compra e adaptar suas estratégias de marketing e relacionamento com o cliente de acordo. Por exemplo, clientes com alta recência, frequência e valor podem ser segmentados como clientes VIP e receber ofertas exclusivas, enquanto clientes com baixa recência, frequência e valor podem ser alvos de campanhas de reativação.

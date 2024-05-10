@@ -9,13 +9,17 @@ from pyspark.sql.functions import col, count
 
 # MAGIC %md
 # MAGIC
-# MAGIC # Camada GOLD
-# MAGIC
-# MAGIC Na camada gold, as limpezas e ajustes já foram feitos, então essa camada é responsável por aplicar regras de negócio, agregações e junções de dados que convirjam para analises.
+# MAGIC # Customers orders
 # MAGIC
 # MAGIC Essa é uma tabela de sumarização.
 # MAGIC
-# MAGIC O objetivo dela é permitir analises
+# MAGIC O objetivo dela é responder sobre as compras dos clientes.
+# MAGIC
+# MAGIC Conseguiríamos responder questões como:
+# MAGIC  - Quantas vendas ocorreram por estado
+# MAGIC  - poderiamos ver as vendas por mes e ano
+# MAGIC  - poderiamos ver dados sobre valores das vendas
+# MAGIC  - dados sobre as entregas, como a relação do dia da compra e atraso na entrega
 
 # COMMAND ----------
 
