@@ -22,7 +22,7 @@ Este é um conjunto de dados públicos de comércio eletrônico brasileiro das c
 Estes são dados comerciais reais, foram anonimizados, e as referências às empresas e parceiros no texto de revisão foram substituídas pelos nomes das grandes casas de Game of Thrones.
 
 ## 1 - Ingestão de dados (staging)
-O arquivo .ipynb responsável pela ingestão pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/0%20-%20data_ingestion%20(staging).py)
+O arquivo .ipynb responsável pela ingestão pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/0%20-%20data_ingestion%20(staging).ipynb)
 
 O dataset escolhido foi o [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerces)
 
@@ -48,7 +48,7 @@ Costumo chamar essa camada de "lake"
 ### Persistência dos dados
 
 Nessa layer, armazenamos os dados em delta e criamos a delta table no database Bronze.
-O arquivo pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/1%20-%20Bronze/bronze_olist.py)
+O arquivo pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/1%20-%20Bronze/bronze_olist.ipynb)
 
 ____
 
