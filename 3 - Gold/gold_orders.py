@@ -72,18 +72,6 @@ df_order_payments = df_order_payments.groupBy("order_id").agg(
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC
-# MAGIC select count(*), order_id from olist_silver.order_reviews group by order_id having count(*) > 1
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC
-# MAGIC select * from olist_silver.order_reviews where order_id = 'f63a31c3349b87273468ff7e66852056'
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC
 # MAGIC ## 2 - Data Join
