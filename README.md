@@ -33,7 +33,11 @@ Mas aqui poderíamos utilizar do AutoLoader, ou até mesmo de alguma ferramenta 
 Nossa staging não precisaria existir (apenas caso fossem dados vindos por airbyte, por exemplo). Mas criamos para exemplificar, pois irei salvar a staging em parquet. Depois disso, todas as camadas serão em Delta
 
 # Delta Lake House
+Workflow
 ![workflows](extra/workflows.PNG)
+
+Agendamento
+![agendamento](extra/agendamento.PNG)
 ____
 ## 🥉 Bronze
 
