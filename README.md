@@ -104,3 +104,10 @@ Ao analisar esses três aspectos juntos, as empresas podem segmentar seus client
 
 ## Dashboard
 ![dash final](extra/dash.PNG)
+
+Ao analisar o dashboard, podemos ver que em SP é onde tem o maior numero de compradores (faz sentido pela população).
+Podemos ver também as TOP5 cidades que mais venderam e os TOP5 clientes de mais compraram
+
+Podemos observar também a relação entre o tempo de despache e o tempo total da compra até recebimento da mercadoria. Embora tenha ligação linear, podemos observar que vários casos tem atraso mesmo quando o despache é agil.
+
+Por fim, observamos que compras feitas no final de semana possuem maior média de dias em atraso para a entrega.
