@@ -35,10 +35,9 @@ Nossa staging não precisaria existir (apenas caso fossem dados vindos por airby
 # Delta Lake House
 ____
 ## 🥉 Bronze
-<bronze_layer>
-<summary>
+
 **Camada inicial, dados _as is_**
-</summary>
+
 
 
 
@@ -51,15 +50,12 @@ Costumo chamar essa camada de "lake"
 
 Nessa layer, armazenamos os dados em delta e criamos a delta table no database Bronze.
 O arquivo pode ser visto [aqui](https://dbc-df9d574c-31e4.cloud.databricks.com/?o=2804151959601052#notebook/422770193078081/command/422770193078087)
-</bronze_layer>
+
 ____
 
 ## 🥈 Silver
 
-<silver_layer>
-<summary>
 **camada de limpeza, normalização e enriquecimento de dados.**
-</summary>
 
 e.g., 
  - uppercase
