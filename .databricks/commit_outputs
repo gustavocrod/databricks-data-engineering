@@ -25,3 +25,8 @@ ecommerce_olist/2 - Silver/silver_order_payments.ipynb
 ecommerce_olist/2 - Silver/silver_order_reviews.ipynb
 ecommerce_olist/2 - Silver/silver_products.ipynb
 ecommerce_olist/2 - Silver/silver_sellers.ipynb
+ecommerce_olist/3 - Gold/gold_orders.ipynb
+ecommerce_olist/3 - Gold/gold_rfv_analysis.ipynb
+ecommerce_olist/3 - Gold/gold_multiple_orders.ipynb
+ecommerce_olist/3 - Gold/gold_total_orders_month_year.ipynb
+ecommerce_olist/3 - Gold/gold_total_orders_profit_by_seller_city.ipynb
