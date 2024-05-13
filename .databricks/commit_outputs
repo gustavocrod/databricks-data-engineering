@@ -18,3 +18,10 @@ supermarket_sales/1 - bronze/bronze_supermarket_sales.ipynb
 supermarket_sales/0 - data_ingestion (staging).ipynb
 ecommerce_olist/2 - Silver/silver_orders.ipynb
 supermarket_sales/2 - silver/silver_supermarket_sales.ipynb
+ecommerce_olist/2 - Silver/silver_customers.ipynb
+ecommerce_olist/2 - Silver/silver_order_items.ipynb
+ecommerce_olist/2 - Silver/silver_geolocation.ipynb
+ecommerce_olist/2 - Silver/silver_order_payments.ipynb
+ecommerce_olist/2 - Silver/silver_order_reviews.ipynb
+ecommerce_olist/2 - Silver/silver_products.ipynb
+ecommerce_olist/2 - Silver/silver_sellers.ipynb
