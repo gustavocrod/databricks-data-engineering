@@ -21,8 +21,7 @@ Estes são dados comerciais reais, foram anonimizados, e as referências às emp
 
 Antes de tudo, executamos um script para criação dos databases (bronze, silver e gold)
 
-## 1 - Ingestão de dados (staging)
-O arquivo .ipynb responsável pela ingestão pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/0%20-%20data_ingestion%20(staging).ipynb)
+## [1 - Ingestão de dados (staging)]((https://github.com/gustavocrod/databricks-data-engineering/blob/main/project_ecommerce_olist/0%20-%20data_ingestion%20(staging).ipynb))
 
 O dataset escolhido foi o [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerces)
 Utilizamos do opendatasets para fazer download diretamente do kaggle, ao adicionar as credenciais em um arquivo chamado kaggle.json na raiz do projeto (arquivo ignorado pelo .gitignore).

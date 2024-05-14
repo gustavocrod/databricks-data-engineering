@@ -1,9 +1,10 @@
 # 🛒 Kaggle Supermarket sales
 
 Após ingerirmos os dados do Kaggle, iremos fazer transformações e responder algumas perguntas de negócio, como:
- 1 - Qual a distribuição de vendas por mês?
- 2 - Qual a venda que mais faturou?
- 3 - Qual a distribuição de vendas por tipo de pagamento?
+- 1 - Como foram as vendas por mês?
+- 2 - Qual a distribuição de vendas por gênero?
+- 3 - Qual a distribuição de vendas por tipo de pagamento?
+- 4 - Total de vendas por tipo de produto?
 
 Essas e outras (poucas) perguntas podem ser respondidas com os dados que trataremos.
 
@@ -47,11 +48,11 @@ Nossa staging não precisaria existir (apenas caso fossem dados vindos por airby
 
 # Delta Lake House
 Workflow
-![workflows](extra/workflows.PNG)
+![workflows](extra/supermartket_workflow.PNG)
 
 Agendamento
 ![schedule](extra/schedule_supermarket_sales.PNG)
-![agendamento](extra/agendamento.PNG)
+![agendamento](extra/workflow_schedule.PNG)
 ____
 ## [🥉 Bronze](https://github.com/gustavocrod/databricks-data-engineering/blob/main/project_supermarket_sales/1%20-%20bronze)
 
@@ -106,6 +107,12 @@ e.g.,
   Dessa forma, como a tabela contém vários dados, multiplas agregações são podem ser feitas ao conectar essa tabela diretamente em ferramentes de visualização como o Power BI e Metabase, ou até mesmo via databricks Dashboards. Sendo ela como uma espécie de data mart
   * **2 - agregação analítica**. _i.e._, sumarização de dados.
   Dessa forma podemos adicionar em ferramentas mais simples ou também é util para algum analista que não detém conhecimento em SQL.
+
+## Dashboard
+![agendamento](extra/supermarket_sales_dash.PNG)
+
+Nesse dashboard visualizamos a distribuição de vendas por tipo de pagamento, e podemos entender que pagamento via Dinheiro em espécia "cash", é a forma mais utilizada.
+Podemos também entender que não há diferença sinificante entre compas entre homens e mulheres. O setor que mais vende é o de acessórios fashion. E o mês 1 foi o que mais teve vendas
 
  - ``gross income``: Renda bruta
  - ``Rating``: Classificação de estratificação do cliente em sua experiência de compra geral (Em uma escala de 1 a 10)
