@@ -21,9 +21,9 @@ Estes são dados comerciais reais, foram anonimizados, e as referências às emp
 
 Antes de tudo, executamos um script para criação dos databases (bronze, silver e gold)
 
-## [1 - Ingestão de dados (staging)]((https://github.com/gustavocrod/databricks-data-engineering/blob/main/project_ecommerce_olist/0%20-%20data_ingestion%20(staging).ipynb))
+## [1 - Ingestão de dados (staging)](https://github.com/gustavocrod/databricks-data-engineering/blob/main/project_ecommerce_olist/0%20-%20data_ingestion%20(staging).ipynb)
 
-O dataset escolhido foi o [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerces)
+O dataset escolhido foi o [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 Utilizamos do opendatasets para fazer download diretamente do kaggle, ao adicionar as credenciais em um arquivo chamado kaggle.json na raiz do projeto (arquivo ignorado pelo .gitignore).
 
 Como é um dataset estático (ou quase 100%), não faz sentido adicionar upsert e tampouco streaming.
@@ -61,7 +61,7 @@ Estamos pegando os arquivos em parquet (passo apenas didático), salvando os dad
 
 ____
 
-## [🥈 Silver]((https://github.com/gustavocrod/databricks-data-engineering/tree/main/project_ecommerce_olist/2%20-%20Silver))
+## [🥈 Silver](https://github.com/gustavocrod/databricks-data-engineering/tree/main/project_ecommerce_olist/2%20-%20Silver)
 
 **camada de limpeza, normalização e enriquecimento de dados.**
 
@@ -75,7 +75,7 @@ Na camada silver, limpezas e ajustes em dados devem ser aplicados
 Caso seja possível, enriquecer os dados e extrair dados também deve acontecer nessa camada (definição adotada)
 
 ----
-## [🥇 Gold]((https://github.com/gustavocrod/databricks-data-engineering-olist/tree/main/3%20-%20Gold))
+## [🥇 Gold](https://github.com/gustavocrod/databricks-data-engineering-olist/tree/main/3%20-%20Gold)
 
 **camada para aplicação de regras de negócio**
 
