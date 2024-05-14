@@ -11,8 +11,7 @@ Após ingerirmos os dados do Kaggle, iremos fazer transformações e responder a
 
 Essas e outras tantas perguntas podem ser respondidas com os dados que trataremos.
 
-Juntem-se a mim, enquanto temos um overview do projeto.
-
+Juntem-se a mim, enquanto fazemos um overview do projeto.
 
 Este é um conjunto de dados públicos de comércio eletrônico brasileiro das compras feitas na loja Olist. O conjunto de dados contém informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil. Suas características permitem visualizar um pedido em várias dimensões: desde o status do pedido, preço, pagamento e desempenho de frete até a localização do cliente, atributos do produto e, finalmente, avaliações escritas pelos clientes. Também disponibilizamos um conjunto de dados de geolocalização que relaciona os códigos postais brasileiros às coordenadas lat/long.
 
