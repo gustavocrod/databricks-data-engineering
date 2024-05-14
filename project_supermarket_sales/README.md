@@ -51,7 +51,6 @@ Workflow
 ![workflows](extra/supermartket_workflow.PNG)
 
 Agendamento
-![schedule](extra/schedule_supermarket_sales.PNG)
 ![agendamento](extra/workflow_schedule.PNG)
 ____
 ## [🥉 Bronze](https://github.com/gustavocrod/databricks-data-engineering/blob/main/project_supermarket_sales/1%20-%20bronze)
@@ -109,7 +108,7 @@ e.g.,
   Dessa forma podemos adicionar em ferramentas mais simples ou também é util para algum analista que não detém conhecimento em SQL.
 
 ## Dashboard
-![agendamento](extra/supermarket_sales_dash.PNG)
+![agendamento](extra/supermarket_dash.PNG)
 
 Nesse dashboard visualizamos a distribuição de vendas por tipo de pagamento, e podemos entender que pagamento via Dinheiro em espécia "cash", é a forma mais utilizada.
 Podemos também entender que não há diferença sinificante entre compas entre homens e mulheres. O setor que mais vende é o de acessórios fashion. E o mês 1 foi o que mais teve vendas

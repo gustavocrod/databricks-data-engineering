@@ -31,3 +31,5 @@ ecommerce_olist/3 - Gold/gold_multiple_orders.ipynb
 ecommerce_olist/3 - Gold/gold_total_orders_month_year.ipynb
 ecommerce_olist/3 - Gold/gold_total_orders_profit_by_seller_city.ipynb
 supermarket_sales/3 - gold/gold_sales_by_month.ipynb
+project_supermarket_sales/3 - gold/gold_sales.ipynb
+project_supermarket_sales/3 - gold/gold_sales_by_month.ipynb
