@@ -41,7 +41,7 @@ Workflow
 Agendamento
 ![agendamento](extra/agendamento.PNG)
 ____
-## 🥉 Bronze
+## [🥉 Bronze](https://github.com/gustavocrod/databricks-data-engineering/tree/main/project_ecommerce_olist/1%20-%20Bronze)
 
 **Camada inicial, dados _as is_**
 
@@ -52,10 +52,8 @@ Costumo chamar essa camada de "lake"
 
 ### 1 - Processamento da camada bronze
 
-O arquivo pode ser visto [aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/blob/main/1%20-%20Bronze/bronze_olist.ipynb)
-
-Aqui vamos adicionar uma estrutura que permite um laço de repetição.
-O laço será responsável por armazenar os dados e criar tabela delta para cada "entidade" definida no diagrama ER
+Aqui adicionamos uma estrutura que permite um laço de repetição.
+O laço será responsável por armazenar os dados e criar tabela delta referente a cada "entidade" definida no diagrama ER
 ![diagrama er](extra/er_olist.png)
 
 
@@ -65,7 +63,7 @@ Estamos pegando os arquivos em parquet (passo apenas didático), salvando os dad
 
 ____
 
-## 🥈 Silver
+## [🥈 Silver]((https://github.com/gustavocrod/databricks-data-engineering/tree/main/project_ecommerce_olist/2%20-%20Silver))
 
 **camada de limpeza, normalização e enriquecimento de dados.**
 
@@ -78,9 +76,8 @@ p.s. embora tenha visto várias implementações distintas em projetos que atuei
 Na camada silver, limpezas e ajustes em dados devem ser aplicados
 Caso seja possível, enriquecer os dados e extrair dados também deve acontecer nessa camada (definição adotada)
 
-Os arquivos da layer pode ~~e deve~~ ser [vistos aqui](https://github.com/gustavocrod/databricks-data-engineering/tree/main/project_ecommerce_olist/2%20-%20Silver)
 ----
-## 🥇 Gold
+## [🥇 Gold]((https://github.com/gustavocrod/databricks-data-engineering-olist/tree/main/3%20-%20Gold))
 
 **camada para aplicação de regras de negócio**
 
@@ -90,11 +87,9 @@ e.g.,
 
  Nessa camada aplicamos dois tipos de agregações:
   * **1 - agregação _estilo_ dimensão e fato.** _i.e._, adicionamos joins entre as tabelas, conforme o schema disponibilizado.
-  Dessa forma várias agregações podem ser feitas ao conectar essa tabela diretamente em ferramentes de visualização como o Power BI e Metabase. Sendo ela como uma espécie de data mart
+  Dessa forma, como a tabela contém vários dados, multiplas agregações são podem ser feitas ao conectar essa tabela diretamente em ferramentes de visualização como o Power BI e Metabase, ou até mesmo via databricks Dashboards. Sendo ela como uma espécie de data mart
   * **2 - agregação analítica**. _i.e._, sumarização de dados.
   Dessa forma podemos adicionar em ferramentas mais simples ou também é util para algum analista que não detém conhecimento em SQL.
-
-Os arquivos da layer layer pode ~~e deve~~ ser [vistos aqui](https://github.com/gustavocrod/databricks-data-engineering-olist/tree/main/3%20-%20Gold)
 
 ___
 
