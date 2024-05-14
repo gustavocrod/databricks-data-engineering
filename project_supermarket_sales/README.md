@@ -48,7 +48,7 @@ Nossa staging não precisaria existir (apenas caso fossem dados vindos por airby
 
 # Delta Lake House
 Workflow
-![workflows](extra/supermartket_workflow.PNG)
+![workflows](extra/supermarket_workflow.PNG)
 
 Agendamento
 ![agendamento](extra/workflow_schedule.PNG)
